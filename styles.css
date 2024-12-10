@@ -1,0 +1,318 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e1e1e, #2b2b2b); /* Enhanced dark gradient background */
+    color: white;
+}
+
+/* Glassmorphism Container Styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: center;
+    padding: 20px;
+    height: 150px; /* Adjusted header height */
+    backdrop-filter: blur(15px) saturate(1.5); /* Enhanced blur and saturation */
+    background: rgba(255, 255, 255, 0.2); /* Transparent background */
+    border-radius: 15px; /* Rounded edges */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    position: relative;
+}
+
+/* Logo Styling */
+.logo {
+    position: absolute;
+    top: 20px; /* Place logo in the top-left corner */
+    left: 20px;
+    height: 100px; /* Increased logo size */
+    width: auto; /* Maintain aspect ratio */
+    filter: drop-shadow(0 4px 6px rgba(255, 255, 255, 0.3)); /* Glowing logo */
+    z-index: 10; /* Ensure it appears above other elements */
+}
+
+/* Navigation Menu */
+.nav {
+    margin-left: auto; /* Push navigation to the far right */
+}
+
+.nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1); /* Glassy button */
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.4); /* Highlighted hover effect */
+    color: #1e1e1e; /* Dark text on hover */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3); /* Glow on hover */
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to bottom, #6b7df5, #303030); /* Gradient */
+    color: white;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Deep shadow */
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 0 3px 8px rgba(255, 255, 255, 0.2); /* Text glow */
+}
+
+.hero-content span {
+    color: #ffdd59; /* Highlighted text */
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content .btn {
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.hero-content .btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: #111;
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.5); /* Glow on hover */
+}
+
+
+/* About Section */
+.about {
+    padding: 80px 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.15); /* Glassmorphism effect */
+    backdrop-filter: blur(20px) saturate(1.8);
+    border-radius: 15px;
+    margin: 40px 0;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.about:hover {
+    transform: scale(1.02); /* Subtle zoom-in effect */
+    box-shadow: 0 12px 30px rgba(255, 255, 255, 0.3); /* Enhanced glow */
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 0 3px 6px rgba(255, 255, 255, 0.2);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-grid img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2); /* Soft glow */
+    transition: all 0.3s ease;
+}
+
+.about-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.4); /* Enhanced glow on hover */
+}
+
+/* Skills Section */
+.skills {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #303030, #6b7df5); /* Dynamic gradient */
+    border-radius: 15px;
+    margin: 40px 0;
+    color: white;
+}
+
+.skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 0 3px 8px rgba(255, 255, 255, 0.3); /* Soft text glow */
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.skill {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.skill:hover {
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.3);
+}
+
+.skill i {
+    font-size: 3rem;
+    color: #ffdd59;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 3px 6px rgba(255, 255, 255, 0.3)); /* Glowing icons */
+}
+
+.skill h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+
+.skill p {
+    font-size: 1rem;
+}
+
+/* Projects Section */
+.projects {
+    padding: 80px 20px;
+    background: linear-gradient(to bottom, #303030, #6b7df5); /* Gradient */
+    border-radius: 15px;
+    margin: 40px 0;
+    color: white;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project-item {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 20px;
+    background: #1e1e1e;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    outline: none;
+    resize: none;
+}
+
+.contact button {
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact button:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: #111;
+}
+
+/* Footer Section */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    margin-top: 40px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ffdd59;
+}
